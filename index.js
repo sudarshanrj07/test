@@ -1,15 +1,31 @@
-const http = require("http");
+const express = require("express");
+const app = express();
+const serv = require("http").Server(app);
+require("dotenv").config();
 
-const server = http.createServer((req, res) => {
-	res.writeHead(200, { "content-type": "text/plain" });
-	res.end("Welcome To My First Deployment");
+const PORT = process.env.PORT;
+
+app.get("/", (req, res) => {
+	res.sendFile(__dirname + "/client/index.html");
 });
 
-const PORT = process.env.PORT || 3000;
-
-server.listen(PORT, () => {
-	console.log(`Server is running on ${PORT}`);
+app.use("/client", express.static(__dirname + "/client"));
+serv.listen(PORT, () => {
+	console.log(`Server is started on ${PORT}`);
 });
+
+// const http = require("http");
+
+// const server = http.createServer((req, res) => {
+// 	res.writeHead(200, { "content-type": "text/plain" });
+// 	res.end("Welcome To My First Deployment");
+// });
+
+// const PORT = process.env.PORT || 3000;
+
+// server.listen(PORT, () => {
+// 	console.log(`Server is running on ${PORT}`);
+// });
 
 // const upperCase = require("upper-case").upperCase;
 
