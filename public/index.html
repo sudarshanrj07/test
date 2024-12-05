@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Your Portfolio</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1>Sudarshan Jalawadi</h1>
+				<p>Software Engineer</p>
+				<nav>
+					<ul>
+						<li><a href="#about">About</a></li>
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<!-- About Section -->
+			<section id="about" class="section">
+				<h2>About Me</h2>
+				<p>
+					I'm a passionate software engineer who loves to code, solve problems,
+					and build innovative solutions. With a keen interest in web
+					development and new technologies, I enjoy creating functional and
+					impactful software that enhances user experiences and drives
+					efficiency.
+				</p>
+			</section>
+
+			<!-- Professional Experience Section -->
+			<section id="experience" class="section">
+				<h2>Professional Experience</h2>
+
+				<div class="experience-item">
+					<h3>Software Engineer</h3>
+					<p><strong>Tech Mahindra</strong> | March 2024 - Present</p>
+					<ul>
+						<li>
+							Develop and configure client interfaces to process HL7 message
+							event types (ADT, SIU, DFT, ORM, ORU, MFN) over TCP/IP, utilizing
+							HL7 lower-layer protocol for seamless data transfer and
+							integration
+						</li>
+						<li>
+							Manage end-to-end interface projects, collaborating with vendors
+							and stakeholders to define scope, objectives, and timelines,
+							ensuring successful delivery of healthcare system integrations.
+						</li>
+						<li>
+							Optimized performance, conduct in-depth investigations of
+							interface-related issues during implementation, editing and
+							troubleshooting HL7 messages to resolve errors and optimize
+							performance.
+						</li>
+					</ul>
+				</div>
+
+				<div class="experience-item">
+					<h3>Interface Engineer</h3>
+					<p><strong>Oracle</strong> | September 2022 - March 2024</p>
+					<ul>
+						<li>
+							Designed and developed interfaces using Cerner Integration Engine
+							to integrate with regional platforms and EHR vendors.
+						</li>
+						<li>
+							Provided functional and workflow guidance to the team for
+							planning, development, implementation, and support of integration
+							solutions.
+						</li>
+						<li>
+							Coordinated connectivity, system integration, and User Acceptance
+							Testing (UAT) to ensure interfaces are functioning as expected.
+						</li>
+						<li>
+							Implemented rollback strategies as part of the cutover plan,
+							ensuring smooth production deployment with minimal impact in case
+							of issues.
+						</li>
+					</ul>
+				</div>
+
+				<div class="experience-item">
+					<h3>System Engineer Intern</h3>
+					<p><strong>Cerner</strong> | March 2022 - September 2022</p>
+					<ul>
+						<li>
+							Designed, built, tested, and deployed new HL7 interfaces, handling
+							message types such as ADT, ORM, ORU, DFT, MDM, and SIU.
+						</li>
+						<li>
+							Implemented skip logic, translation tables, user exits, memory,
+							and counter variables to ensure smooth data flow and processing.
+						</li>
+						<li>
+							Investigated and resolved production issues by identifying root
+							causes and applying solutions to prevent recurrence.
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Projects Section -->
+			<section id="projects" class="section">
+				<h2>My Projects</h2>
+				<div class="project-card">
+					<h3>Weather Web App</h3>
+					<p>
+						Built a Weather App using Node.js and the OpenWeatherMap API that
+						provides real-time weather information based on the user’s current
+						location. The application utilizes the browser’s geolocation API to
+						detect the user's location and then fetches the weather data for
+						that location, providing details like temperature, humidity, wind
+						speed, and weather conditions.
+					</p>
+				</div>
+				<div class="project-card">
+					<h3>Discord BOT</h3>
+					<p>
+						Developed a Discord bot using Node.js that listens for commands in a
+						Discord server, makes API calls to external services, and returns
+						the requested information to users. The bot can interact with
+						various APIs, such as weather, news, or data from custom endpoints,
+						to deliver real-time responses within the chat.
+					</p>
+				</div>
+			</section>
+
+			<!-- Contact Section -->
+			<section id="contact" class="section">
+				<h2>Contact Me</h2>
+				<form>
+					<input type="text" placeholder="Your Name" required /><br />
+					<input type="email" placeholder="Your Email" required /><br />
+					<button type="submit">Send Message</button>
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<p>&copy; 2024 Your Name. All rights reserved.</p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>

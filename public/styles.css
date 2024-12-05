@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+	background-color: #333;
+	color: white;
+	perspective: 1000px;
+}
+
+header {
+	background: rgba(0, 0, 0, 0.6);
+	padding: 20px 0;
+	text-align: center;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+header nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+header nav ul li {
+	display: inline;
+	margin: 0 15px;
+}
+
+header nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+	transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+	color: #ffd700;
+}
+
+/* Sections */
+.section {
+	padding: 80px 20px;
+	margin: 60px 0;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	transition: transform 1s ease;
+}
+
+.section h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+/* Professional Experience Section */
+#experience {
+	background: #1c1c1c;
+	padding: 40px 20px;
+	border-radius: 10px;
+	margin-top: 60px;
+}
+
+.experience-item {
+	margin-bottom: 30px;
+}
+
+.experience-item h3 {
+	font-size: 1.8rem;
+	color: #ffd700;
+}
+
+.experience-item p {
+	font-size: 1rem;
+	color: #ccc;
+}
+
+.experience-item ul {
+	list-style-type: square;
+	margin-left: 20px;
+	color: #ddd;
+}
+
+.experience-item ul li {
+	margin-bottom: 10px;
+}
+
+/* Hover Effect on Experience Items */
+.experience-item:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease-in-out;
+}
+
+/* Project Card */
+.project-card {
+	background: #4a4a4a;
+	padding: 20px;
+	margin: 20px 0;
+	border-radius: 10px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.project-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+	background: #222;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+	header h1 {
+		font-size: 2.5rem;
+	}
+
+	.section {
+		padding: 40px 10px;
+	}
+
+	.project-card {
+		padding: 15px;
+	}
+}
